@@ -1,4 +1,4 @@
-import { deliveryOptions } from "./deliveryOptions";
+import { deliveryOptions } from "./deliveryOptions.js";
 
 export let cart = JSON.parse(localStorage.getItem('cart'));
 
@@ -36,7 +36,7 @@ export function addToCart(productId) {
     cart.push({
       productId,
       quantity: 1,
-      deliveryOptionsId: '1'
+      deliveryOptionId: '1'
     });
   }
   
