@@ -16,6 +16,7 @@ A fully functional e-commerce web application built with **pure HTML, CSS, and J
 
 ```
 amazon-clone/
+├── index.html               # Entry Point for Github Pages
 ├── amazon.html              # Main product listing page
 ├── checkout.html            # Shopping cart and checkout page
 ├── orders.html              # Order history page
