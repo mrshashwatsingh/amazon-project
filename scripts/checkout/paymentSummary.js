@@ -6,8 +6,11 @@ import { formatCurrency } from '../utils/money.js';
 export function renderPaymentSummary() {
   let productPriceCents = 0;
   let shippingPriceCents = 0;
+  let totalQuantity = 0;
   
   cart.forEach((cartItem) => {
+    totalQuantity += cartItem.quantity;
+    
     const product = getProduct(cartItem.productId);
     productPriceCents += product.priceCents * cartItem.quantity;
     
@@ -25,7 +28,7 @@ export function renderPaymentSummary() {
     </div>
 
     <div class="payment-summary-row">
-      <div>Items (3):</div>
+      <div>Items (${totalQuantity}):</div>
       <div class="payment-summary-money">
         $${formatCurrency(productPriceCents)}
       </div>
@@ -65,4 +68,9 @@ export function renderPaymentSummary() {
   `;
   
   document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
+  document.querySelector('.js-item-quantity').innerHTML = `
+    Checkout (<a class="return-to-home-link" href="amazon.html">
+      ${totalQuantity} ${totalQuantity === 1 ? 'item' : 'items'}
+    </a>)
+  `;
 }
