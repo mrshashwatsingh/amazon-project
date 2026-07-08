@@ -85,5 +85,5 @@ const bussinessCart = Cart('cart-bussiness');
 cart.loadFromStorage();
 bussinessCart.loadFromStorage();
 
-console.log(bussinessCart)
 console.log(cart);
+console.log(bussinessCart);
