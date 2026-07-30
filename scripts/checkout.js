@@ -3,7 +3,13 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 import { loadProducts } from "../data/products.js";
 
 async function loadPage() {
-  await loadProducts();
+  try {
+    // throw 'error1';
+    
+    await loadProducts();
+  } catch (error) {
+    console.log('Something bad happened. Try again later');
+  }
   
   renderOrderSummary();
   renderPaymentSummary();

@@ -110,6 +110,8 @@ export function loadProducts() {
       }
       return new Product(productDetails);
     });
+  }).catch((error) => {
+    console.log('Something bad happened. Try again later');
   });
   
   return promise;
@@ -131,6 +133,10 @@ export function loadProducts(func) {
     });
     
     func();
+  });
+  
+  xhr.addEventListener('error', (error) => {
+    console.log('Something bad happened. Try again later');
   });
   
   xhr.open('GET', 'https://supersimplebackend.dev/products');
