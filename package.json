@@ -1,0 +1,20 @@
+{
+  "name": "javascript-amazon-project",
+  "version": "1.0.0",
+  "description": "This project is a front-end shopping experience inspired by Amazon, built with plain HTML, CSS, and JavaScript. It includes a product catalog, shopping cart, checkout flow, order history, and tracking pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrshashwatsingh/amazon-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrshashwatsingh/amazon-project/issues"
+  },
+  "homepage": "https://github.com/mrshashwatsingh/amazon-project#readme"
+}
