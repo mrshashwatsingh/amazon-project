@@ -1,4 +1,4 @@
-# Amazon Clone
+# Amazon Clone By Ballu
 
 This project is a front-end shopping experience inspired by Amazon, built with plain HTML, CSS, and JavaScript. It includes a product catalog, shopping cart, checkout flow, order history, and tracking pages.
 
