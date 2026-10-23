@@ -87,3 +87,5 @@ function renderProductGrid() {
   
   updateCartQuantity();
 }
+
+console.log("kishan tiwari");
